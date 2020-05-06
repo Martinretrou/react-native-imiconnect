@@ -1,39 +1,5 @@
 #import "ImiconnectWrapper.h"
 
-@protocol ICMessagingDelegate;
-@class ICMessaging;
-
-@protocol ICSecurityTokenErrorDelegate;
-@class ICConfig;
-
-#import <UserNotifications/UserNotifications.h>
-#import <CommonCrypto/CommonCrypto.h>
-#import "NSData+Encryption.h"
-
-@interface IMIconnectWrapper ()
-{
-
-}
-@property (nonatomic, copy) NSString *callbackId;
-@property (nonatomic, copy) NSString *callback;
-
-@property (nonatomic, strong) NSMutableArray *messageCallBackIds;
-@property (nonatomic, strong) NSMutableArray *deepLinkCallBackIds;
-@property (nonatomic, strong) NSMutableArray *securityTokenErrorCallBackIds;
-@property (nonatomic, strong) NSMutableArray *connectionChangeCallBackIds;
-
-@property (nonatomic, strong) NSMutableDictionary *handlerObj;
-@property (nonatomic, strong) NSMutableArray *topicsHandlerObj;
-@property (nonatomic, strong) NSMutableArray *threadsHandlerObj;
-@property (nonatomic, strong) NSMutableArray *messageHandlerObj;
-
-@property (nonatomic) ICAppDelegate *icAppDelegate;
-@property (nonatomic) ICConfig *icConfig;
-@property (nonatomic) ICDeviceProfile *deviceProfile;
-
-@end
-
-
 @implementation ImiconnectWrapper
 
 RCT_EXPORT_MODULE()
