@@ -1,0 +1,6 @@
+framework module IMIconnectNotificationServiceExtension {
+  umbrella header "IMIconnectNotificationServiceExtension.h"
+
+  export *
+  module * { export * }
+}

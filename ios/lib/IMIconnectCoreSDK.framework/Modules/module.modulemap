@@ -1,0 +1,6 @@
+framework module IMIconnectCoreSDK {
+  umbrella header "IMIconnectCoreSDK.h"
+
+  export *
+  module * { export * }
+}
