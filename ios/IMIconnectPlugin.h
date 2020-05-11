@@ -2,12 +2,17 @@
 // @protocol ICSecurityTokenErrorDelegate;
 // @class ICConfig;
 
+#import <React/RCTBridgeModule.h>
+
 // #import <Cordova/CDV.h>
 // #import <Cordova/CDVPlugin.h>
-#import "CDVPlugin.h"
+// #import "CDVPlugin.h"
 #import <IMIconnectCoreSDK/IMIconnectCoreSDK.h>
 
-@interface IMIconnectPlugin : CDVPlugin
+@interface IMIconnectPlugin : NSObject <RCTBridgeModule>
+
+RCT_EXPORT_MODULE();
+
 
 // @property (nonatomic, strong) NSDictionary *notificationMessage;
 // @property (nonatomic, strong) NSString *password;
