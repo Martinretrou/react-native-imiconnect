@@ -7,7 +7,7 @@
 #import "CDVPlugin.h"
 #import <IMIconnectCoreSDK/IMIconnectCoreSDK.h>
 
-@interface IMIconnectPlugin : CDVPlugin <ICMessagingDelegate,ICSecurityTokenErrorDelegate,ICMessagingActionsDelegate>
+@interface IMIconnectPlugin : CDVPlugin
 
 // @property (nonatomic, strong) NSDictionary *notificationMessage;
 // @property (nonatomic, strong) NSString *password;

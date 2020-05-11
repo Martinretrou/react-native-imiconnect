@@ -36,7 +36,7 @@
 
 // @end
 
-// @implementation IMIconnectPlugin : CDVPlugin
+@implementation IMIconnectPlugin : CDVPlugin
 
 // - (ICAppDelegate *)icAppDelegate
 // {
