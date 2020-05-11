@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B2511A924693F6A00DFC518 /* libRCTCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2511A724693F5000DFC518 /* libRCTCordova.a */; };
 		B3E7B58A1CC2AC0600A0062D /* ImiconnectWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* ImiconnectWrapper.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B2511A624693F5000DFC518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B2511A224693F5000DFC518 /* RCTCordova.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32285F831BFC05EC00AD8363;
+			remoteInfo = RCTCordova;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
@@ -24,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libImiconnectWrapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libImiconnectWrapper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B2511A224693F5000DFC518 /* RCTCordova.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTCordova.xcodeproj; path = "../node_modules/@remobile/react-native-cordova/ios/RCTCordova.xcodeproj"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* ImiconnectWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImiconnectWrapper.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* ImiconnectWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImiconnectWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2511A924693F6A00DFC518 /* libRCTCordova.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,10 +63,27 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				5B2511A224693F5000DFC518 /* RCTCordova.xcodeproj */,
 				B3E7B5881CC2AC0600A0062D /* ImiconnectWrapper.h */,
 				B3E7B5891CC2AC0600A0062D /* ImiconnectWrapper.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				5B2511A824693F6A00DFC518 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		5B2511A324693F5000DFC518 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B2511A724693F5000DFC518 /* libRCTCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B2511A824693F6A00DFC518 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,12 +131,28 @@
 			mainGroup = 58B511D21A9E6C8500147676;
 			productRefGroup = 58B511D21A9E6C8500147676;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5B2511A324693F5000DFC518 /* Products */;
+					ProjectRef = 5B2511A224693F5000DFC518 /* RCTCordova.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				58B511DA1A9E6C8500147676 /* ImiconnectWrapper */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5B2511A724693F5000DFC518 /* libRCTCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTCordova.a;
+			remoteRef = 5B2511A624693F5000DFC518 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -221,6 +267,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../react-native-cordova/ios/RCTCordova",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
@@ -237,6 +284,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../react-native-cordova/ios/RCTCordova",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
